@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { ResultCompSciComponent } from './result-comp-sci/result-comp-sci.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomePageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    ResultCompSciComponent
   ],
   imports: [
     BrowserModule,
