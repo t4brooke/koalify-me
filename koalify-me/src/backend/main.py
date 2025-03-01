@@ -8,7 +8,7 @@ client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
 
 
 if __name__ == "__main__":
-    quizAnswers = quizAndAnswers.quiz()
+    quizAnswers = quizAndAnswers()
     PROMPT_MESSAGES = [
         {
             "role": "user",
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     print("Would you like to have your resume analyzed to a job/internship description you want to apply to?\n")
     answerToResAnlys = input("Please enter 'y' or 'n'\n")
-    while answerToResAnlys.lower()!=("y" or "n"):
+    while answerToResAnlys.lower() not in ("y", "n"):
         print("Please enter a valid response.\n")
         answerToResAnlys = input("Please enter 'y' or 'n'")
     
