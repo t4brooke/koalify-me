@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ResultCompSciComponent } from './result-comp-sci/result-comp-sci.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomePageComponent,
     SignupPageComponent,
-    ResultCompSciComponent
+    ResultCompSciComponent,
+    ResumePageComponent
   ],
   imports: [
     BrowserModule,
