@@ -1,5 +1,7 @@
 # KoalifyMe - AI-Powered College & Career Pathway
 
+![KoalifyMe Logo](images/image.png)
+
 ## Overview
 
 Choosing a college, major, and career can feel overwhelming, but **KoalifyMe** makes it easy! Our AI-powered, koala-themed platform is designed to help high school students in Philadelphia navigate their future and take confident steps toward their goals. Whether you're just starting to explore your interests or ready to make the next big move, KoalifyMe is here to guide you.
