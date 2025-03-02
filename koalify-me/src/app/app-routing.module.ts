@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupPageComponent },
   { path: 'results-compsci', component: ResultCompSciComponent},
   { path: 'resume', component: ResumePageComponent},
-  { path: 'quiz-page-1', component: QuizPage1Component}
+  { path: 'quiz-page1', component: QuizPage1Component}
 ];
 
 @NgModule({
