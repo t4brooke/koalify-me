@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basic Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Carme&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,18 +13,28 @@
   </header>
   
   <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>This is a basic website template using HTML and CSS.</p>
-    </section>
-    <section>
-    <p>Upload Your Resume</p>
-    <form action="/action_page.php" method="post" enctype="multipart/form-data">
-        <input type="file" id="myFile" name="filename" accept=".pdf" required>
-        <input type="submit" value="Upload PDF">
-    </form>
-    </section>
+    <div class="Resume">
+      <form action="/action_page.php" method="post" enctype="multipart/form-data">
+        <!-- Job Description Input -->
+        <section>
+          <p style="font-weight: bold;">Paste in Desired Job Description</p>
+          <textarea id="textInput" name="textInput" required></textarea>
+        </section>
 
+        <!-- Resume Upload -->
+        <section>
+          <p>Upload Resume</p>
+          <div id="drop-area">
+            <p>Drag & Drop your resume here or click to upload</p>
+            <input type="file" id="fileInput" name="resumeFile" accept=".pdf" required hidden>
+          </div>
+          <p id="file-name"></p> <!-- Display uploaded file name -->
+        </section>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </main>
   
   <footer>
