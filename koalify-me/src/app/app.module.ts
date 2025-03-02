@@ -11,6 +11,7 @@ import { ResultCompSciComponent } from './result-comp-sci/result-comp-sci.compon
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
 import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
+import { ResultSoftEngComponent } from './result-soft-eng/result-soft-eng.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.compo
     ResultCompSciComponent,
     ResumePageComponent,
     QuizPage1Component,
-    ResumeFeedbackComponent
+    ResumeFeedbackComponent,
+    ResultSoftEngComponent
   ],
   imports: [
     HttpClientModule,

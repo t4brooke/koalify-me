@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -210,7 +209,7 @@ header {
   font-size: 26px;
   margin-bottom: 10px;
 }
-/* New rule to indent bullet points in the colleges section */
+
 .college ul {
   list-style: disc;
   padding-left: 2em; /* Increase left padding to indent bullet points */
@@ -240,7 +239,7 @@ footer.feedback h3 {
   border-radius: 10px;
   width: 80%;
   max-width: 400px;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto;
 }
 
 .feedback-form input {
@@ -256,7 +255,7 @@ footer.feedback h3 {
 }
 
 .feedback-form button {
-  width: 150px; /* Adjust width as you need */
+  width: 150px;
   padding: 15px 20px;
   background-color: #99CA9E;
   border: 2px solid #2E2019;
