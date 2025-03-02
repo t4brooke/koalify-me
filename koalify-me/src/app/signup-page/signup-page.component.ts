@@ -15,14 +15,12 @@ export class SignupPageComponent {
   constructor(private router: Router) {}
 
   onSubmit() {
-    // Prevent form submission if no username or password
     if (!this.username || !this.password) {
       this.errorMessage = 'Username and password are both required';
       return;
     }
     this.errorMessage = '';
 
-    // Navigate to the quiz page after successful submission
     this.router.navigate(['/quiz-page1']);
   }
 }
