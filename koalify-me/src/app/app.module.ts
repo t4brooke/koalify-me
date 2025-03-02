@@ -14,6 +14,7 @@ import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.compo
 import { ResultSoftEngComponent } from './result-soft-eng/result-soft-eng.component';
 import { ResultCyberComponent } from './result-cyber/result-cyber.component';
 import { ResultInfoSysComponent } from './result-info-sys/result-info-sys.component';
+import { ResultGameDevComponent } from './result-game-dev/result-game-dev.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ResultInfoSysComponent } from './result-info-sys/result-info-sys.compon
     ResumeFeedbackComponent,
     ResultSoftEngComponent,
     ResultCyberComponent,
-    ResultInfoSysComponent
+    ResultInfoSysComponent,
+    ResultGameDevComponent
   ],
   imports: [
     HttpClientModule,
