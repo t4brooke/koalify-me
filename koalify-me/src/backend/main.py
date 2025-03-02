@@ -2,11 +2,15 @@ from openai import OpenAI
 import os
 import quizAndAnswers
 import resumeRec
+from dotenv import load_dotenv
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key)
 
 if __name__ == "__main__":
-    quizAnswers = quizAndAnswers.quiz() 
+    quizAnswers = quizAndAnswers
     PROMPT_MESSAGES = [
         {
             "role": "user",
