@@ -275,3 +275,19 @@
   .feedback-form button:hover {
     background-color: #729e76;
   }
+  
+  .resume-helper-link {
+    margin-top: 30px;
+  }
+  
+  .resume-helper-link a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #2E2019;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .resume-helper-link a:hover {
+    color: #C6B7DC;
+  }
