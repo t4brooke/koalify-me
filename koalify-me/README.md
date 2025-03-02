@@ -1,59 +1,35 @@
-# KoalifyMe
+# KoalifyMe - AI-Powered College & Career Pathway
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+## Overview
 
-## Development server
+Choosing a college, major, and career can feel overwhelming, but **KoalifyMe** makes it easy! Our AI-powered, koala-themed platform is designed to help high school students in Philadelphia navigate their future and take confident steps toward their goals. Whether you're just starting to explore your interests or ready to make the next big move, KoalifyMe is here to guide you.
 
-To start a local development server, run:
+With **KoalifyMe**, you’ll receive personalized recommendations and smart tools to help you at every stage of your educational journey.
 
-```bash
-ng serve
-```
+## Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Personalized Education Path**: Complete a simple quiz, and receive tailored recommendations for the best college and major options based on your interests and strengths.
+- **Extracurricular Recommendations**: Get suggestions for activities and clubs that align with your passions, helping you build a well-rounded resume.
+- **Resume Support**: Access tools and resources to help you create and enhance your resume, preparing you for both college applications and career opportunities.
+- **Smart Tools**: Use our AI-powered platform to stay organized and focused, ensuring you take the right steps toward your future.
 
-## Code scaffolding
+## Target Audience
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+KoalifyMe is specifically designed for high school students in Philadelphia who are exploring college and career options. Our platform simplifies the decision-making process, helping students confidently navigate their next steps.
 
-```bash
-ng generate component component-name
-```
+## How It Works
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. **Take the Quiz**: Start by completing a quick, fun quiz that helps us understand your interests, strengths, and goals.
+2. **Receive Recommendations**: Based on your quiz results, you'll receive personalized guidance for selecting a college, major, and extracurricular activities.
+3. **Utilize Our Smart Tools**: Use our platform’s smart features for resume support, career exploration, and more as you work toward your future.
+4. **Climb Toward Your Future**: With KoalifyMe, we’ll help you make informed decisions and take confident steps toward success!
 
-```bash
-ng generate --help
-```
+## Why Choose KoalifyMe?
 
-## Building
+- **AI-Powered**: Our platform uses artificial intelligence to ensure personalized and accurate recommendations.
+- **Koala-Themed**: We make the journey fun and approachable with our unique koala theme, designed to ease your decision-making process.
+- **Comprehensive Support**: From education paths to extracurricular activities and resume building, we cover all aspects of your future planning.
 
-To build the project run:
+## Contact
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For questions or support, please reach out to us at [koalifyme03@gmail.com](mailto:koalifyme03@gmail.com).
