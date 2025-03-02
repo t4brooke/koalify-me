@@ -15,6 +15,7 @@ import { ResultSoftEngComponent } from './result-soft-eng/result-soft-eng.compon
 import { ResultCyberComponent } from './result-cyber/result-cyber.component';
 import { ResultInfoSysComponent } from './result-info-sys/result-info-sys.component';
 import { ResultGameDevComponent } from './result-game-dev/result-game-dev.component';
+import { ResultUiUxComponent } from './result-ui-ux/result-ui-ux.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ResultGameDevComponent } from './result-game-dev/result-game-dev.compon
     ResultSoftEngComponent,
     ResultCyberComponent,
     ResultInfoSysComponent,
-    ResultGameDevComponent
+    ResultGameDevComponent,
+    ResultUiUxComponent
   ],
   imports: [
     HttpClientModule,
