@@ -1,56 +1,277 @@
-/* Reset some default browser styles */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set html and body to full height */
+html, body {
+  height: 100%;
+}
+
+/* Overall Page Grid Layout */
+body {
+  font-family: 'Grandstander', cursive, Arial, sans-serif;
+  background-color: #C5D9E1;
+  color: #2E2019;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header, content, footer */
+}
+
+/* Header Styling */
+header {
+  grid-row: 1;
+  background: #C6B7DC;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  text-align: left;
+  padding: 50px;
+  margin-left: 100px;
+}
+
+.small-header {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.main-header {
+  font-size: 60px;
+  margin: 0;
+}
+
+.pun-subtitle {
+  font-family: 'Carme', sans-serif;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.koala-img {
+  width: 450px;
+  height: auto;
+  margin-right: 150px;
+}
+
+/* Main Container (Sidebar and Content) */
+.container {
+  grid-row: 2;
+  display: flex;
+  align-items: stretch; /* Ensures children stretch to fill available height */
+}
+
+/* Sidebar Container */
+.sidebar-container {
+  position: relative;
+  width: 280px;
+}
+
+/* Sidebar Background - fills entire container height */
+.sidebar-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #C5D9E1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+/* Sticky Sidebar Content */
+.sidebar-content {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 20px;
+  font-family: 'Grandstander';
+  font-size: 16px;
+}
+
+/* Sidebar Heading Spacing */
+.sidebar-content h2 {
+  margin-bottom: 0.5em; /* Slight gap before the divider */
+}
+
+/* Sidebar List */
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Divider line placed as its own <li> */
+.sidebar-content li.divider {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+  border-bottom: 1px solid black;
+  height: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each list item extends fully across the padded container */
+.sidebar-content li {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+  border-bottom: 1px solid black;
+}
+
+/* Remove double top border if desired */
+.sidebar-content li.divider + li {
+  border-top: none;
+}
+
+/* Button Fills Entire List Item */
+/* Using a transparent top border to simulate spacing */
+.sidebar-content li button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 5px solid transparent; /* Simulated 5px top gap */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: inherit;
+  color: inherit;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s, border-top-color 0.3s;
+}
+
+/* Hover effect on the button, including the top border area */
+.sidebar-content li button:hover {
+  background-color: #5C829D;
+  color: #fff;
+  border-top-color: #5C829D;
+}
+
+/* Arrow styling - remains black on hover */
+.sidebar-content li button::after {
+  content: '>';
+  margin-left: 10px;
+  color: #2E2019;
+}
+.sidebar-content li button:hover::after {
+  color: #2E2019;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.content-section {
+  padding: 30px;
+}
+
+.section-heading {
+  background-color: #99CA9E;
+  border-radius: 25px;
+  padding: 10px 15px;
+  display: inline-block;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.section-text {
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 22px;
+}
+
+/* College-specific styling */
+.college {
+  margin-bottom: 20px;
+}
+.college h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+/* New rule to indent bullet points in the colleges section */
+.college ul {
+  list-style: disc;
+  padding-left: 2em; /* Increase left padding to indent bullet points */
+}
+
+/* Footer Styling */
+footer.feedback {
+  grid-row: 3;
+  background-color: #5C829D;
+  padding: 30px;
+  color: #2E2019;
+  text-align: center;
+}
+
+footer.feedback h3 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #2E2019;
+  font-size: 75px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.feedback-form input {
+  width: 750px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #D9D9D9;
+  border: 2px solid #2E2019;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Grandstander', cursive;
+  font-weight: bolder;
+}
+
+.feedback-form button {
+  width: 150px; /* Adjust width as you need */
+  padding: 15px 20px;
+  background-color: #99CA9E;
+  border: 2px solid #2E2019;
+  color: #2E2019;
+  font-family: 'Grandstander', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 155px;
+  margin-right: 155px;
   
-  /* Body styling */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #C5D9E1;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Header styling */
-  header {
-    background: #C6B7DC;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  /* Navigation styles */
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Main content styling */
-  main {
-    margin: 20px 0;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  /* Footer styling */
-  footer {
-    background: #35424a;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+  margin-top: 20px;
+}
+
+.feedback-form button:hover {
+  background-color: #729e76;
+}

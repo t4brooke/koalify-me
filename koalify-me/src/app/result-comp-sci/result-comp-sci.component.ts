@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './result-comp-sci.component.css'
 })
 export class ResultCompSciComponent {
-
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
