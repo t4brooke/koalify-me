@@ -20,6 +20,8 @@ import { ResultDataSciComponent } from './result-data-sci/result-data-sci.compon
 import { ResultInfoTechComponent } from './result-info-tech/result-info-tech.component';
 import { ResultAiMlComponent } from './result-ai-ml/result-ai-ml.component';
 import { ResultCompEngComponent } from './result-comp-eng/result-comp-eng.component';
+import { QuizPage2Component } from './quiz-page2/quiz-page2.component';
+import { QuizPage3Component } from './quiz-page3/quiz-page3.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ResultCompEngComponent } from './result-comp-eng/result-comp-eng.compon
     ResultDataSciComponent,
     ResultInfoTechComponent,
     ResultAiMlComponent,
-    ResultCompEngComponent
+    ResultCompEngComponent,
+    QuizPage2Component,
+    QuizPage3Component
   ],
   imports: [
     HttpClientModule,

@@ -15,6 +15,8 @@ import { ResultCompEngComponent } from './result-comp-eng/result-comp-eng.compon
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
 import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
+import { QuizPage2Component } from './quiz-page2/quiz-page2.component';
+import { QuizPage3Component } from './quiz-page3/quiz-page3.component';
 
 const routes: Routes = [
   { path: 'home', component: WelcomePageComponent },
@@ -32,6 +34,8 @@ const routes: Routes = [
   { path: 'resume', component: ResumePageComponent},
   { path: 'quiz-page1', component: QuizPage1Component},
   { path: 'resume-feedback', component: ResumeFeedbackComponent},
+  { path: 'quiz-page2', component: QuizPage2Component},
+  { path: 'quiz-page3', component: QuizPage3Component}
 ];
 
 @NgModule({
