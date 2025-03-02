@@ -12,6 +12,7 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
 import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
 import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
 import { ResultSoftEngComponent } from './result-soft-eng/result-soft-eng.component';
+import { ResultCyberComponent } from './result-cyber/result-cyber.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResultSoftEngComponent } from './result-soft-eng/result-soft-eng.compon
     ResumePageComponent,
     QuizPage1Component,
     ResumeFeedbackComponent,
-    ResultSoftEngComponent
+    ResultSoftEngComponent,
+    ResultCyberComponent
   ],
   imports: [
     HttpClientModule,
