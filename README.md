@@ -1,6 +1,7 @@
 # KoalifyMe - AI-Powered College & Career Pathway
 
-![KoalifyMe Logo](/assets/images/image.png)
+![image](https://github.com/user-attachments/assets/3edd1c1a-b9e4-4d36-b10e-8f45c9292c43)
+
 
 ## Overview
 
