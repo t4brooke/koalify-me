@@ -19,6 +19,7 @@ import { ResultUiUxComponent } from './result-ui-ux/result-ui-ux.component';
 import { ResultDataSciComponent } from './result-data-sci/result-data-sci.component';
 import { ResultInfoTechComponent } from './result-info-tech/result-info-tech.component';
 import { ResultAiMlComponent } from './result-ai-ml/result-ai-ml.component';
+import { ResultCompEngComponent } from './result-comp-eng/result-comp-eng.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ResultAiMlComponent } from './result-ai-ml/result-ai-ml.component';
     ResultUiUxComponent,
     ResultDataSciComponent,
     ResultInfoTechComponent,
-    ResultAiMlComponent
+    ResultAiMlComponent,
+    ResultCompEngComponent
   ],
   imports: [
     HttpClientModule,
