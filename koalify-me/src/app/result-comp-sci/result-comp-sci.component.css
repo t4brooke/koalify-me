@@ -50,7 +50,7 @@ header {
 }
 
 .pun-subtitle {
-  font-family: 'Carme', sans-serif;
+  font-family: 'Carme';
   margin-top: 10px;
   font-size: 22px;
 }
@@ -196,6 +196,7 @@ header {
 }
 
 .section-text {
+  font-family: 'Carme';
   margin-top: 30px;
   margin-left: 40px;
   font-size: 22px;
