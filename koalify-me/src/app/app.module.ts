@@ -10,6 +10,7 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ResultCompSciComponent } from './result-comp-sci/result-comp-sci.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
+import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
     SignupPageComponent,
     ResultCompSciComponent,
     ResumePageComponent,
-    QuizPage1Component
+    QuizPage1Component,
+    ResumeFeedbackComponent
   ],
   imports: [
     HttpClientModule,

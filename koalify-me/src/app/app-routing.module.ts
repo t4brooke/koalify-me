@@ -5,13 +5,15 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ResultCompSciComponent } from './result-comp-sci/result-comp-sci.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
+import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
 
 const routes: Routes = [
   { path: '', component: WelcomePageComponent },
   { path: 'signup', component: SignupPageComponent },
   { path: 'results-compsci', component: ResultCompSciComponent},
   { path: 'resume', component: ResumePageComponent},
-  { path: 'quiz-page1', component: QuizPage1Component}
+  { path: 'quiz-page1', component: QuizPage1Component},
+  { path: 'resume-feedback', component: ResumeFeedbackComponent}
 ];
 
 @NgModule({
