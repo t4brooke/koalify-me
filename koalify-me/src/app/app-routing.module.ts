@@ -10,6 +10,7 @@ import { ResultGameDevComponent } from './result-game-dev/result-game-dev.compon
 import { ResultUiUxComponent } from './result-ui-ux/result-ui-ux.component';
 import { ResultDataSciComponent } from './result-data-sci/result-data-sci.component';
 import { ResultInfoTechComponent } from './result-info-tech/result-info-tech.component';
+import { ResultAiMlComponent } from './result-ai-ml/result-ai-ml.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
 import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'results-ui-ux', component: ResultUiUxComponent},
   { path: 'results-data-sci', component: ResultDataSciComponent},
   { path: 'results-info-tech', component: ResultInfoTechComponent},
+  { path: 'results-ai-ml', component: ResultAiMlComponent},
   { path: 'resume', component: ResumePageComponent},
   { path: 'quiz-page1', component: QuizPage1Component},
   { path: 'resume-feedback', component: ResumeFeedbackComponent},
