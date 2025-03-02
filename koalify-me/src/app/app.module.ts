@@ -7,6 +7,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ResultCompSciComponent } from './result-comp-sci/result-comp-sci.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
+import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
     WelcomePageComponent,
     SignupPageComponent,
     ResultCompSciComponent,
-    ResumePageComponent
+    ResumePageComponent,
+    QuizPage1Component
   ],
   imports: [
     BrowserModule,
