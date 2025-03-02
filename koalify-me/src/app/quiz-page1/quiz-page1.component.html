@@ -5,8 +5,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>quiz page 1</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Carme&display=swap" rel="stylesheet">
     </head>
     <body>
-        <p>hi</p>
+        <div class="container">
+            <form id="quiz-form">
+                <div class="form-field">
+                    <label for="q1">1. What excites you most about technology?</label><br>
+                    <input type="text" id="q1" required>
+                </div>
+                <div class="form-field">
+                    <label for="q1">2. Which technical skill do you feel most confident in?</label><br>
+                    <input type="text" id="q1" required>
+                </div>
+                <div class="form-field">
+                    <label for="q1">3. Which soft skill do you feel most confident in?</label><br>
+                    <input type="text" id="q1" required>
+                </div>
+                <div class="form-field">
+                    <label for="q1">4. What type of impact do you want to make in the tech industry?</label><br>
+                    <input type="text" id="q1" required>
+                </div>
+            </form>
+            <br>
+        </div>
+        <div class = "footer">
+            <button id="btn">Next</button>
+        </div>
+        <script>
+            // Get all input fields and the button
+            const inputs = document.querySelectorAll('input[type="text"]');
+            const theButton = document.getElementById('btn');
+    
+            // Function to check if all inputs are filled
+            function checkFormCompletion() {
+                let allFilled = true;
+                inputs.forEach(input => {
+                    if (input.value.trim() === '') {
+                        allFilled = false;
+                    }
+                });
+                // Show or hide the button based on the form completion
+                theButton.style.display = allFilled ? 'inline-block' : 'none';
+            }
+    
+            // Add event listeners to each input field to track changes
+            inputs.forEach(input => {
+                input.addEventListener('input', checkFormCompletion);
+            });
+        </script>
     </body>
 </html>
