@@ -82,6 +82,7 @@ html, body {
   border-radius: 10px;
   width: 80%;
   max-width: 400px;
+  font-weight: bolder;
 }
 
 .login-form input {

@@ -21,6 +21,6 @@ export class WelcomePageComponent {
     }
     this.errorMessage = '';
 
-    this.router.navigate(['/quiz-page-1']);
+    this.router.navigate(['/quiz-page1']);
   }
 }
