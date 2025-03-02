@@ -17,7 +17,7 @@ import { QuizPage1Component } from './quiz-page1/quiz-page1.component';
 import { ResumeFeedbackComponent } from './resume-feedback/resume-feedback.component';
 
 const routes: Routes = [
-  { path: '', component: WelcomePageComponent },
+  { path: 'home', component: WelcomePageComponent },
   { path: 'signup', component: SignupPageComponent },
   { path: 'results-compsci', component: ResultCompSciComponent},
   { path: 'results-softeng', component: ResultSoftEngComponent},
