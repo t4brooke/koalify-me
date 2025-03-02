@@ -16,6 +16,7 @@ import { ResultCyberComponent } from './result-cyber/result-cyber.component';
 import { ResultInfoSysComponent } from './result-info-sys/result-info-sys.component';
 import { ResultGameDevComponent } from './result-game-dev/result-game-dev.component';
 import { ResultUiUxComponent } from './result-ui-ux/result-ui-ux.component';
+import { ResultDataSciComponent } from './result-data-sci/result-data-sci.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ResultUiUxComponent } from './result-ui-ux/result-ui-ux.component';
     ResultCyberComponent,
     ResultInfoSysComponent,
     ResultGameDevComponent,
-    ResultUiUxComponent
+    ResultUiUxComponent,
+    ResultDataSciComponent
   ],
   imports: [
     HttpClientModule,
