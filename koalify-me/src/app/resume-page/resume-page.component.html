@@ -14,38 +14,28 @@
   
   <main>
     <section>
-      <h2>Introduction</h2>
       <form action="http://127.0.0.1:5000/analyze_resume" method="post" enctype="multipart/form-data">
-        
-        <label for="textInput">Enter Job Description:</label>
-        <input type="text" id="textInput" name="textInput" required>
-        
-        <br><br>
-
-        <label for="fileInput" id="fileLabel">Upload Your Resume (PDF only):</label>
-        <div id="drop-area" onclick="document.getElementById('fileInput').click();">
-          <p>Click here to select a PDF</p>
+        <div class="form-group">
+          <label for="textInput">Enter Job Description:</label>
+          <input type="text" id="textInput" name="textInput" required>
         </div>
-        <input type="file" id="fileInput" name="pdf_file" accept=".pdf" required hidden>
-        <p id="file-name"></p> <!-- Display uploaded file name -->
-
-        <br><br>
-
-        <input type="submit" value="Upload">
+         
+        <div class="form-group">
+          <label for="fileInput" id="fileLabel">Upload Your Resume (PDF only):</label>
+          <div id="drop-area" onclick="document.getElementById('fileInput').click();">
+            <p>Click here to select a PDF</p>
+          </div>
+          <input type="file" id="fileInput" name="pdf_file" accept=".pdf" required hidden>
+          <p id="file-name"></p>
+        </div>
+         
+        <input type="submit" value="Submit">
       </form>
     </section>
   </main>
   
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 KoalifyMe. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Update file name display when user selects a file
-    document.getElementById("fileInput").addEventListener("change", function() {
-        const fileName = this.files[0] ? this.files[0].name : "No file selected";
-        document.getElementById("file-name").textContent = fileName;
-    });
-  </script>
 </body>
 </html>
