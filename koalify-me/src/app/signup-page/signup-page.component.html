@@ -1,25 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up</title>
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Carme&display=swap" rel="stylesheet">
     </head>
-    <!-- <link rel="stylesheet" href="signup-page.component.css"> -->
-    <body style="background-color: #C5D9E1;">
-        <div>
-            <img>
-        </div>
-        <div class="form-container">
-            <form>
-                <div  style="background-color: #5C829D;">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required />
-                    <br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required />
-                    <br>
+    <style>
+        html, body {
+            background-color: #C5D9E1;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        label {
+            display:block;
+            text-align: left;
+            font-family: Grandstander;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 20%;
+        }
+        input {
+            border-radius: 15px;
+            width: 60%;
+            height: 88px;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .items {
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .login-container {
+            background-color: #5C829D; 
+            height: 20%;
+            width: 60%;
+            border-radius: 30px;
+            margin-left: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        } 
+        .btn {
+            padding: 10px;
+            background-color: #99CA9E;
+            border: 3px solid #2E2019;
+            border-radius: 70px;
+            font-size: 30px;
+            font-family: Grandstander;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 20%;
+            margin-top: 2%;
+        }
+
+        /* Hover effect for the button */
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Focus effect (optional, when the button is clicked or focused) */
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        } 
+        .textfield{
+            display: block;
+            
+        }      
+    </style>
+    <body>
+        <div class="container">
+            <div class="items">
+                <div>
+                    <img src=".\assets\images\IMG_0017.png" width="30%">
                 </div>
-                <button type="sign-up">Sign Up</button>
-            </form>
+                <div style="align-items: center;">
+                    <form>
+                        <div class="login-container">
+                            <div class="textfield" style="margin-bottom: 50px;">
+                                <label for="username">Username:</label> <br>
+                                <input type="text" id="username" name="username" required />
+                                <br>
+                            </div>
+                            <div class="textfield">
+                                <label for="password" style="padding-top: 15px">Password:</label> <br>
+                                <input type="password" id="password" name="password" required />
+                                <br>
+                            </div>
+                        </div>
+                        <button class="btn" type="sign-up">Sign Up</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
