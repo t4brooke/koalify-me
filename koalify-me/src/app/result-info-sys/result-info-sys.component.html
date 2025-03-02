@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koalify Me</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Carme&display=swap" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <!-- Left Side: Text Content -->
+      <div class="header-text">
+        <h2 class="small-header">You got...</h2>
+        <h1 class="main-header">Computer Science!</h1>
+        <p class="pun-subtitle">I’m koala-fied to turn your algorithms into tree-mendous solutions!</p>
+      </div>
+      <!-- Right Side: Koala Image -->
+      <div class="header-image">
+        <img src="./assets/images/KoalifyMeLogo.png" class="koala-img" alt="Koala Logo" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container with Sidebar and Content -->
+  <div class="container">
+    <!-- Sidebar Container -->
+    <div class="sidebar-container">
+      <!-- Sidebar Background (full height with shadow) -->
+      <div class="sidebar-background"></div>
+      <!-- Sticky Sidebar Content -->
+      <nav class="sidebar-content">
+        <h2>Explore This Major</h2>
+        <ul>
+          <!-- Divider placed above the first item -->
+          <li class="divider"></li>
+          <li><button (click)="scrollTo('introduction')">Introduction</button></li>
+          <li><button (click)="scrollTo('colleges')">Colleges</button></li>
+          <li><button (click)="scrollTo('extracurriculars')">Extracurriculars</button></li>
+          <li><button (click)="scrollTo('events')">Events</button></li>
+          <li><button (click)="scrollTo('careers')">Careers</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Introduction Section -->
+      <section class="content-section" id="introduction">
+        <div class="section-heading">
+          <h2>Introduction</h2>
+        </div>
+        <div class="section-text">
+          <p>
+            Computer Science is the study of computing, algorithms, and the theory behind both software and hardware systems. This major blends problem-solving, programming, and mathematics to explore how computers work and how they can solve real-world challenges. It lays the foundation for a wide range of tech careers, from developing innovative software to advancing research in emerging technologies.
+          </p>
+        </div>
+      </section>
+
+      <!-- Colleges Section -->
+      <section class="content-section" id="colleges">
+        <div class="section-heading">
+          <h2>Colleges</h2>
+        </div>
+        <div class="section-text">
+          <div class="college">
+            <h3>University of Pennsylvania</h3>
+            <ul>
+              <li>Acceptance Rate: 6%</li>
+              <li>Graduation Rate: 96%</li>
+              <li>Average Tuition: $26,123</li>
+            </ul>
+          </div>
+          <div class="college">
+            <h3>Temple University</h3>
+            <ul>
+              <li>Acceptance Rate: 83%</li>
+              <li>Graduation Rate: 74%</li>
+              <li>Average Tuition: $18,864</li>
+            </ul>
+          </div>
+          <div class="college">
+            <h3>Drexel University</h3>
+            <ul>
+              <li>Acceptance Rate: 78%</li>
+              <li>Graduation Rate: 78%</li>
+              <li>Average Tuition: $39,267</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Extracurriculars Section -->
+      <section class="content-section" id="extracurriculars">
+        <div class="section-heading">
+          <h2>Extracurriculars</h2>
+        </div>
+        <div class="section-text">
+          <p>
+            <a href="https://cs50.harvard.edu" target="_blank">CS50 by Harvard (Free)</a> – One of the best intro CS courses.<br />
+            <br />
+            <a href="https://www.coursera.org/specializations/python" target="_blank">Python for Everybody (Free)</a> – Beginner-friendly Python programming.<br />
+            <br />
+            <a href="https://www.khanacademy.org/computing/computer-science" target="_blank">Khan Academy – Intro to CS</a> – Interactive and great for beginners.
+          </p>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section class="content-section" id="events">
+        <div class="section-heading">
+          <h2>Events</h2>
+        </div>
+        <div class="section-text">
+          <p>
+            <a href="https://techspophiladelphia.com/" target="_blank">https://techspophiladelphia.com/</a><br />
+            <br />
+            This event brings together experts, innovators, and beginners alike for hands-on workshops, interactive exhibits, and inspiring talks. Whether you’ve never coded before or just want to learn more about the latest tech trends, you’ll find plenty of opportunities to try new things and ask questions. It’s a great way to discover what excites you in the world of technology—no experience needed! Check out Techspo Philadelphia and take your first step into tech!
+          </p>
+        </div>
+      </section>
+
+      <!-- Careers Section -->
+      <section class="content-section" id="careers">
+        <div class="section-heading">
+          <h2>Careers</h2>
+        </div>
+        <div class="section-text">
+          <p>
+            <strong>Software Developer</strong> – Software developers create applications, websites, and systems that people use daily. They write code, test software, and collaborate with teams to build new digital solutions.<br />
+            <br />
+            <strong>Systems Analyst</strong> – Systems analysts evaluate and improve technology systems for businesses, ensuring they run smoothly and efficiently. They often act as a bridge between business needs and technical solutions.<br />
+            <br />
+            <strong>Research Scientist</strong> – Computer science researchers work on groundbreaking innovations in areas like artificial intelligence, cryptography, and quantum computing. Their work advances technology and shapes the future of computing.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Feedback Footer -->
+  <footer class="feedback">
+    <h3>Don't like what you see? Tell us why!</h3>
+    <div class="feedback-form">
+      <form action="#" method="POST">
+          <input type="text" id="textFeedback" name="textFeedback" required>
+          <button type="submit">Submit</button>
+      </form>
+  
+
+
