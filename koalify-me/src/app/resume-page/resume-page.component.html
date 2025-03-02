@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic Website</title>
+  <title>Resume Helper</title>
   <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Carme&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,32 +13,39 @@
   </header>
   
   <main>
-    <div class="Resume">
-      <form action="/action_page.php" method="post" enctype="multipart/form-data">
-        <!-- Job Description Input -->
-        <section>
-          <p style="font-weight: bold;">Paste in Desired Job Description</p>
-          <textarea id="textInput" name="textInput" required></textarea>
-        </section>
+    <section>
+      <h2>Introduction</h2>
+      <form action="http://127.0.0.1:5000/analyze_resume" method="post" enctype="multipart/form-data">
+        
+        <label for="textInput">Enter Job Description:</label>
+        <input type="text" id="textInput" name="textInput" required>
+        
+        <br><br>
 
-        <!-- Resume Upload -->
-        <section>
-          <p>Upload Resume</p>
-          <div id="drop-area">
-            <p>Drag & Drop your resume here or click to upload</p>
-            <input type="file" id="fileInput" name="resumeFile" accept=".pdf" required hidden>
-          </div>
-          <p id="file-name"></p> <!-- Display uploaded file name -->
-        </section>
+        <label for="fileInput" id="fileLabel">Upload Your Resume (PDF only):</label>
+        <div id="drop-area" onclick="document.getElementById('fileInput').click();">
+          <p>Click here to select a PDF</p>
+        </div>
+        <input type="file" id="fileInput" name="pdf_file" accept=".pdf" required hidden>
+        <p id="file-name"></p> <!-- Display uploaded file name -->
 
-        <!-- Submit Button -->
-        <input type="submit" value="Submit">
+        <br><br>
+
+        <input type="submit" value="Upload">
       </form>
-    </div>
+    </section>
   </main>
   
   <footer>
     <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Update file name display when user selects a file
+    document.getElementById("fileInput").addEventListener("change", function() {
+        const fileName = this.files[0] ? this.files[0].name : "No file selected";
+        document.getElementById("file-name").textContent = fileName;
+    });
+  </script>
 </body>
 </html>
