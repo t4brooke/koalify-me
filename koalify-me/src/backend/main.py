@@ -1,19 +1,17 @@
 from openai import OpenAI
 import os
-
 import quizAndAnswers
 import resumeRec
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
 
-
 if __name__ == "__main__":
-    quizAnswers = quizAndAnswers()
+    quizAnswers = quizAndAnswers.quiz() 
     PROMPT_MESSAGES = [
         {
             "role": "user",
             "content": [
-                "Please take these answers and suggest ......",
+                "Please take these answers and suggest relevant career paths:",
                 quizAnswers,
             ],
         },
@@ -27,13 +25,12 @@ if __name__ == "__main__":
     result = client.chat.completions.create(**params)
     print(result.choices[0].message.content)
 
-    print("Would you like to have your resume analyzed to a job/internship description you want to apply to?\n")
-    answerToResAnlys = input("Please enter 'y' or 'n'\n")
-    while answerToResAnlys.lower() not in ("y", "n"):
-        print("Please enter a valid response.\n")
-        answerToResAnlys = input("Please enter 'y' or 'n'")
+    print("\nWould you like to have your resume analyzed to a job/internship description?\n")
+    answerToResAnlys = input("Please enter 'y' or 'n':\n")
     
-    if answerToResAnlys.lower() == "n":
-        print("")
-    elif answerToResAnlys.lower() == "y":
-        resumeRec.resumeAnalysis() 
+    while answerToResAnlys.lower() not in ("y", "n"):
+        print("Invalid response. Please enter 'y' or 'n'.")
+        answerToResAnlys = input()
+
+    if answerToResAnlys.lower() == "y":
+        resumeRec.resumeAnalysis()
