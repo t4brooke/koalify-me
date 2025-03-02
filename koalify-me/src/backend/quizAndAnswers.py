@@ -4,22 +4,14 @@ def quiz():
                     "2. Which technical skill do you feel most confident in?",
                     "3. Which soft skill do you feel most confident in?",
                     "4. What type of impact do you want to make in the tech industry?",
-                    "5. Do you enjoy teaching?",
-                    "6. Do you prefer leading or following?",
-                    "7. How do you feel about working with a team?",
-                    "8. If you could work for any company, which would it be?",
-                    "9. What's your ideal job flexibility?",
-                    "10. How do you feel about working with stakeholders?",
-                    "11. Would you rather build something entirely new or optimize an existing system?",
-                    "12. Do you enjoy designing visuals?",
-                    "13. In a team project, would you prefer to handle creative design or technical problem-solving?",
-                    "14. Do you enjoy working with networks and system administration?",
-                    "15. Are you interested in ethical hacking?",
-                    "16. Do you prefer leading or following?",
-                    "17. How do you approach solving problems?",
-                    "18. Are you comfortable working under pressure when responding to security incidents?",
-                    "19. How do you feel about installing and configuring operating systems like Windows and Linux?",
-                    "20. How do you feel about working with stakeholders?"
+                    "5. How do you feel about working with a team?",
+                    "6. How do you feel about working with stakeholders?",
+                    "7. Would you rather build something entirely new or optimize an existing system?",
+                    "8. Do you enjoy designing visuals?",
+                    "9. In a team project, would you prefer to handle creative design or technical problem-solving?",
+                    "10. Do you like figuring out how computers and the internet work together, and helping keep everything running smoothly?",
+                    "11. Are you interested in ethical hacking?", 
+                    "12. How do you approach solving problems?"
                     ]
     answers = []
     count = 1
